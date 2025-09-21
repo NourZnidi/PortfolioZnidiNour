@@ -59,53 +59,12 @@ const Navbar = () => {
         </div> */}
 
         {/* Mobile menu button */}
-        <button className="lg:hidden text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        {/* <button className="lg:hidden text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        </button> */}
       </div>
 
-      {/* Mobile menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden bg-crypto-blue/95 backdrop-blur-lg absolute top-full left-0 w-full py-4 shadow-lg">
-          <div className="container mx-auto px-4">
-            <ul className="flex flex-col space-y-4">
-              <li>
-                <a href="#features" className="text-gray-300 hover:text-white transition-colors block py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors block py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  How it works
-                </a>
-              </li>
-              <li>
-                <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors block py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" className="text-gray-300 hover:text-white transition-colors block py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="text-gray-300 hover:text-white transition-colors block py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  FAQ
-                </a>
-              </li>
-              <li className="pt-4 flex flex-col space-y-3">
-                <Button variant="ghost" className="text-gray-300 hover:text-white w-full justify-start">
-                  Login
-                </Button>
-                <Link to="#!">
-                  <Button className="bg-crypto-purple hover:bg-crypto-dark-purple text-white w-full">Buy Now</Button>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      )}
+     
     </nav>
   );
 };
