@@ -48,6 +48,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+        {/* hello */}
 
         {/* <div className="hidden lg:flex items-center space-x-4">
           <Button variant="ghost" className="text-gray-300 hover:text-white">
